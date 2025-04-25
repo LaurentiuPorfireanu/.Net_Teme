@@ -47,6 +47,9 @@ C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -169,4 +172,3 @@ C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\obj\Debug\net9.
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\obj\Debug\net9.0\Movie.Api.pdb
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\obj\Debug\net9.0\Movie.Api.genruntimeconfig.cache
 C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\obj\Debug\net9.0\ref\Movie.Api.dll
-C:\Users\laurp\Desktop\Faculta\Anul 2\sem2\Movie\Movie\Movie.Api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

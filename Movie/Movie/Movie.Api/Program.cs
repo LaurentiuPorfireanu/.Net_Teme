@@ -1,43 +1,44 @@
-﻿using Movie.Core;
+﻿using Microsoft.AspNetCore.Mvc;
+using Movie.Core;
 using Movie.Database;
 using Movie.Infrastructure.Config;
-
-
 
 var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddControllers();
+//In loc de builder.Services.AddOpenApi(); a trebuit sa pun codul de la linia 11-17
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "Movie API", Version = "v1" });
+});
+
+
 builder.Services.AddAuthorization();
-builder.Services.AddOpenApi();
 builder.Services.AddRepositories();
 builder.Services.AddServices();
 
+var app = builder.Build();
 
-
-var app=builder.Build();
 
 AppConfig.Init(app.Configuration);
 
-if(app.Environment.IsDevelopment())
+//Am modificat aici
+if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-
+    app.UseSwagger();
 
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/openapi/v1.json", "OpenAPI V1");
-    }
-        );
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "OpenAPI V1");
+    });
 }
 
 
 app.UseHttpsRedirection();
-
 app.UseAuthentication();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

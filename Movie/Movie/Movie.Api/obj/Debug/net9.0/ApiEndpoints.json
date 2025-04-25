@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Movie.Api.Controllers.DirectorController",
+    "Method": "AddDirector",
+    "RelativePath": "directors/add-director",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Movie.Core.Dtos.Create.CreateDirectorDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Movie.Api.Controllers.DirectorController",
+    "Method": "GetDirectors",
+    "RelativePath": "directors/get-directors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Movie.Api.Controllers.FilmController",
+    "Method": "AddFilm",
+    "RelativePath": "films/add-film",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payload",
+        "Type": "Movie.Core.Dtos.Create.CreateFilmDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Movie.Api.Controllers.FilmController",
+    "Method": "GetFilms",
+    "RelativePath": "films/get-films",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
