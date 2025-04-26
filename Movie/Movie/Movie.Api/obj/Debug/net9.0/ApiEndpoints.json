@@ -43,6 +43,22 @@
   },
   {
     "ContainingType": "Movie.Api.Controllers.FilmController",
+    "Method": "GetByDirectorName",
+    "RelativePath": "films/get-by-director-name/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Movie.Api.Controllers.FilmController",
     "Method": "GetFilms",
     "RelativePath": "films/get-films",
     "HttpMethod": "GET",

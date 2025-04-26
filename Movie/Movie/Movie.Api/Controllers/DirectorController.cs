@@ -16,7 +16,6 @@ namespace Movie.Api.Controllers
         }
 
         [HttpGet("get-directors")]
-
         public async Task<IActionResult> GetDirectors()
         {
             var directors = await _service.GetAllAsync();

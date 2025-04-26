@@ -25,15 +25,12 @@ namespace Movie.Api.Controllers
             return Ok(result);
         }
 
-        //[HttpGet("get-film/{id}")]
-        //public async Task<IActionResult> GetFilm(int id)
-        //{
-        //   var result = await _filmService.GetByIdAsync(id);
-        //    if (result == null)
-        //    {
-        //        return NotFound("Film not found");
-        //    }
-        //    return Ok(result);
-        //}
+        [HttpGet("get-by-director-name/{name}")]
+        public async Task<IActionResult> GetByDirectorName(string name)
+        {
+            var result = await _filmService.GetByDirectorNameAsync(name);
+            return Ok(result);
+        }
+
     }
 }

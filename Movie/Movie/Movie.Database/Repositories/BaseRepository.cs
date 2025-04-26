@@ -11,7 +11,7 @@ namespace Movie.Database.Repositories
 {
     public class BaseRepository<T>(MovieDatabaseContext databaseContext) where T : BaseEntity
     {
-        private DbSet<T> _dbSet { get; }=databaseContext.Set<T>();
+        protected DbSet<T> _dbSet { get; }=databaseContext.Set<T>();
 
         public Task<List<T>> GetAllAsync(bool includeDeletedEntities=false)
         {

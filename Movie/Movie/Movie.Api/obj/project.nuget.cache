@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FVI6shhuzU0=",
+  "dgSpecHash": "+eAlk3H/mA4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Api\\Movie.Api.csproj",
+  "projectFilePath": "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Api\\Movie.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laurp\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\laurp\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

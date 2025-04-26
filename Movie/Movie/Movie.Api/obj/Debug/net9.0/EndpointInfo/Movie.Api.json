@@ -90,6 +90,28 @@
           }
         }
       }
+    },
+    "/films/get-by-director-name/{name}": {
+      "get": {
+        "tags": [
+          "Film"
+        ],
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {

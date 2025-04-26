@@ -4850,11 +4850,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Database\\Movie.Database.csproj",
+      "projectUniqueName": "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Database\\Movie.Database.csproj",
       "projectName": "Movie.Database",
-      "projectPath": "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Database\\Movie.Database.csproj",
+      "projectPath": "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Database\\Movie.Database.csproj",
       "packagesPath": "C:\\Users\\laurp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Database\\obj\\",
+      "outputPath": "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Database\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4875,8 +4875,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Infrastructure\\Movie.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\laurp\\Desktop\\Faculta\\Anul 2\\sem2\\Movie\\Movie\\Movie.Infrastructure\\Movie.Infrastructure.csproj"
+            "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Infrastructure\\Movie.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\laurp\\Desktop\\.Net_Teme\\Movie\\Movie\\Movie.Infrastructure\\Movie.Infrastructure.csproj"
             }
           }
         }

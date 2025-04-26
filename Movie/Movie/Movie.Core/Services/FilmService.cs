@@ -23,15 +23,15 @@ namespace Movie.Core.Services
 
         public async Task<List<FilmDto>> GetAllAsync()
         {
-            var films = await _filmRepository.GetAllAsync();
+            var films = await _filmRepository.GetAllWithDirectorAsync();
             return films.Select(FilmMapper.ToDto).ToList();
         }
 
 
-        public async Task<FilmDto?> GetByIdAsync(int id)
+        public async Task<List<FilmDto>> GetByDirectorNameAsync(string directorName)
         {
-            var film = await _filmRepository.GetFirstOrDefaultAsync(id);
-            return film is null ? null : FilmMapper.ToDto(film);
+            var films = await _filmRepository.GetFilmsByDirectorNameAsync(directorName);
+            return films.Select(FilmMapper.ToDto).ToList();
         }
 
         public async Task AddAsync(CreateFilmDto dto)
