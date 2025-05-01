@@ -91,18 +91,19 @@
         }
       }
     },
-    "/films/get-by-director-name/{name}": {
+    "/films/get-by-director-id/{id}": {
       "get": {
         "tags": [
           "Film"
         ],
         "parameters": [
           {
-            "name": "name",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],

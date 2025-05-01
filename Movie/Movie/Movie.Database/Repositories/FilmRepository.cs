@@ -23,12 +23,9 @@ namespace Movie.Database.Repositories
                 .ToListAsync();
         }
 
-        public async Task<List<Film>> GetFilmsByDirectorNameAsync(string directorName)
+        public async Task<List<Film>> GetFilmsByDirectorAsync(int id)
         {
-            return await _dbSet
-                .Include(f => f.Director)
-                .Where(f => f.DeletedAt == null && f.Director.Name == directorName)
-                   .ToListAsync();
+            return await _dbSet.Include(f => f.Director).Where(f=>f.DeletedAt==null && f.DirectorId == id).ToListAsync();
         }
 
     }

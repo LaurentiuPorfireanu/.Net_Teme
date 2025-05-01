@@ -44,14 +44,14 @@
   {
     "ContainingType": "Movie.Api.Controllers.FilmController",
     "Method": "GetByDirectorName",
-    "RelativePath": "films/get-by-director-name/{name}",
+    "RelativePath": "films/get-by-director-id/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "name",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

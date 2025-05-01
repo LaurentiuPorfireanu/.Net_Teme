@@ -15,6 +15,13 @@ namespace Movie.Api.Controllers
             _service = service;
         }
 
+        [HttpPost("add-director")]
+        public async Task<IActionResult> AddDirector([FromBody] CreateDirectorDto dto)
+        {
+            await _service.AddAsync(dto);
+            return Ok("Director added successfully");
+        }
+
         [HttpGet("get-directors")]
         public async Task<IActionResult> GetDirectors()
         {
@@ -23,11 +30,6 @@ namespace Movie.Api.Controllers
         }
 
 
-        [HttpPost("add-director")]
-        public async Task<IActionResult> AddDirector([FromBody] CreateDirectorDto dto)
-        {
-            await _service.AddAsync(dto);
-            return Ok("Director added successfully");
-        }
+        
     }
 }

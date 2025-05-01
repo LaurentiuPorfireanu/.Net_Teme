@@ -28,9 +28,9 @@ namespace Movie.Core.Services
         }
 
 
-        public async Task<List<FilmDto>> GetByDirectorNameAsync(string directorName)
+        public async Task<List<FilmDto>> GetByDirectirIdAsync(int directorId)
         {
-            var films = await _filmRepository.GetFilmsByDirectorNameAsync(directorName);
+            var films = await _filmRepository.GetFilmsByDirectorAsync(directorId);
             return films.Select(FilmMapper.ToDto).ToList();
         }
 

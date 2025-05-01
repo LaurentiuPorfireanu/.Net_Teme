@@ -7,9 +7,9 @@ namespace Movie.Api.Controllers
 {
     [ApiController]
     [Route("films")]
-    public class FilmController(FilmService _filmService) :ControllerBase
+    public class FilmController(FilmService _filmService) : ControllerBase
     {
-        
+
 
         [HttpPost("add-film")]
         public async Task<IActionResult> AddFilm([FromBody] CreateFilmDto payload)
@@ -21,16 +21,17 @@ namespace Movie.Api.Controllers
         [HttpGet("get-films")]
         public async Task<IActionResult> GetFilms()
         {
-           var result= await _filmService.GetAllAsync();
+            var result = await _filmService.GetAllAsync();
             return Ok(result);
         }
 
-        [HttpGet("get-by-director-name/{name}")]
-        public async Task<IActionResult> GetByDirectorName(string name)
+        [HttpGet("get-by-director-id/{id}")]
+        public async Task<IActionResult> GetByDirectorName(int id)
         {
-            var result = await _filmService.GetByDirectorNameAsync(name);
+            var result = await _filmService.GetByDirectirIdAsync(id);
             return Ok(result);
-        }
 
+
+        }
     }
 }
