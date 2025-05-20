@@ -21,8 +21,11 @@ namespace Movie.Api.Controllers
             await _service.AddAsync(dto);
             return Ok("Director added successfully");
         }
+             
 
-        [HttpGet("get-directors")]
+
+
+        [HttpGet("get-directors.")]
         public async Task<IActionResult> GetDirectors()
         {
             var directors = await _service.GetAllAsync();

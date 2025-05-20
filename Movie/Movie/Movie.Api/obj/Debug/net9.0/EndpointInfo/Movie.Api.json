@@ -5,18 +5,6 @@
     "version": "v1"
   },
   "paths": {
-    "/directors/get-directors": {
-      "get": {
-        "tags": [
-          "Director"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/directors/add-director": {
       "post": {
         "tags": [
@@ -41,6 +29,18 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/directors/get-directors.": {
+      "get": {
+        "tags": [
+          "Director"
+        ],
         "responses": {
           "200": {
             "description": "OK"
