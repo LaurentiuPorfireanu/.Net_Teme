@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Movie.Core;
+﻿using Movie.Core;
 using Movie.Database;
 using Movie.Infrastructure.Config;
+using Movie.Infrastructure.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,8 +33,9 @@ if (app.Environment.IsDevelopment())
     {
         options.SwaggerEndpoint("/swagger/v1/swagger.json", "OpenAPI V1");
     });
-}
 
+}
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 
 app.UseHttpsRedirection();
 app.UseAuthentication();
